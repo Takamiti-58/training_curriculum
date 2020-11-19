@@ -19,6 +19,7 @@ class CalendarsController < ApplicationController
     params.require(:plan).permit(:date, :plan)
   end
   # ↑のストロングパラメータのcalendarsに問題がある
+  # requireで指定すべきものが間違っている
   # requireで指定すべきものが何だったかをおさらいし、正しいものを指定していただきたい
 
   def getWeek
